@@ -4,27 +4,29 @@
   <title>Game</title>
 </head>
 <body>
-    <form action='/madlib'>
+    <form action='/madlib' method='GET'>
         <h3>Great! Give me a...</h3>
         <label>Person: <input type="text" name="person"></label>
         <br>
-        Color: 
-        <select name="color"> 
-            <label><option value="red">Red</option></label>
-            <label><option value="orange">Orange</option></label>
-            <label><option value="yellow">Yellow</option></label>
-            <label><option value="green">Green</option></label>
-            <label><option value="blue">Blue</option></label>
-            <label><option value="purple">Purple</option></label>
-            <label><option value="pink">Pink</option></label>
-            <label><option value="white">White</option></label>
-            <label><option value="brown">Brown</option></label>
-            <label><option value="black">Black</option></label>
-        </select>
+        <br>
+        Color:
+            <label><input type="checkbox" name="color" value="red">Red</label>
+            <label><input type="checkbox" name="color" value="orange">Orange</label>
+            <label><input type="checkbox" name="color" value="yellow">Yellow</label>
+            <label><input type="checkbox" name="color" value="green">Green</label>
+            <label><input type="checkbox" name="color" value="blue">Blue</label>
+            <label><input type="checkbox" name="color" value="purple">Purple</label>
+            <label><input type="checkbox" name="color" value="pink">Pink</label>
+            <label><input type="checkbox" name="color" value="white">White</label>
+            <label><input type="checkbox" name="color" value="brown">Brown</label>
+            <label><input type="checkbox" name="color" value="black">Black</label>
+        <br>
         <br>
         <label>Noun: <input type="text" name="noun"></label>
         <br>
+        <br>
         <label>Adjective*: <input type="text" name="adjective"></label>
+        <br>
         <br>
         <br>
         <input type="submit">
