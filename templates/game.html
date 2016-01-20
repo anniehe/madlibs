@@ -1,9 +1,8 @@
-<!doctype html>
-<html>
-<head>
-  <title>Game</title>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block title %}Game{% endblock %}
+
+{% block content %}
     <form action='/madlib' method='GET'>
         <h3>Great! Give me a...</h3>
         <label>Person: <input type="text" name="person"></label>
@@ -35,5 +34,4 @@
     <br>
     <br>
     <footer>*Adjectives are words that describe or modify another person or thing.</footer>
-</body>
-</html>
+{% endblock %}
