@@ -1,3 +1,65 @@
 * {
     font-family: sans-serif;
 }
+
+.submit-button {
+    background-color: #006666;
+    color: #ffffff;
+    border-color: #006666;
+    font-weight: bold;
+    height: 25px;
+}
+
+#username {
+    font-style: italic;
+    color: #0066ff;
+}
+
+.text-box {
+    background-color: #ebfafa;
+}
+
+body {
+    background-color: #ffffe5;
+
+}
+
+#red-box {
+    background-color: red;
+}
+
+#orange-box{
+    background-color: orange;
+}
+
+#yellow-box{
+    background-color: yellow;
+}
+
+#green-box{
+    background-color: green;
+}
+
+#blue-box{
+    background-color: blue;
+}
+
+#purple-box{
+    background-color: purple;
+}
+
+#pink-box{
+    background-color: #ff66cc;
+}
+
+#white-box{
+    background-color: white;
+}
+
+#brown-box{
+    background-color: #994c00;
+}
+
+#black-box{
+    background-color: #b3b3b3;
+}

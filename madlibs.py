@@ -12,7 +12,7 @@ AWESOMENESS = [
     'brilliant', 'ducky', 'coolio', 'incredible', 'wonderful', 'smashing', 'lovely']
 
 MADLIB_TEMPLATES = [
-    'madlib2.html', 'madlib.html']
+    'madlib.html', 'madlib2.html', 'madlib3.html', 'madlib4.html']
 
 @app.route('/')
 def start_here():
@@ -57,17 +57,24 @@ def show_game_form():
 def show_madlib():
     """Shows result of madlib."""
 
-
     player_person = request.args.get("person").title()
-    player_color = choice(request.args.getlist("color"))
     player_noun = request.args.get("noun").lower()
     player_adjective = request.args.get("adjective").lower()
+    color_list = request.args.getlist("color")
+    player_color1 = choice(color_list)
+    
+    if len(color_list) == 1:
+        player_color2 = player_color1
+    else:
+        color_list.remove(player_color1)
+        player_color2 = choice(color_list)
 
     current_template = choice(MADLIB_TEMPLATES)
 
     return render_template(current_template,
                             person=player_person,
-                            color=player_color,
+                            color1=player_color1,
+                            color2=player_color2,
                             noun=player_noun,
                             adjective=player_adjective)
 

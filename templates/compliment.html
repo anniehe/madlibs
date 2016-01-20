@@ -3,19 +3,20 @@
 {% block title %}A Compliment{% endblock %}
 
 {% block content %}
-    <h3>Hi, {{ person }}! I think you're:</h3>
+    <h3>Hi, <span id="username">{{ person }}</span>! I think you're:</h3>
     <h4><ul>
     {% for item in compliments %}
         <li>{{ item }}</li>
     {% endfor %}
     </ul>
     </h4>
+    <img src="http://i.imgur.com/895xtiU.gif"/>
     <form action='/game'>
         Do you want to play a game?
         <label><input type="radio" name="playgame" value="yes">Yes</label>
         <label><input type="radio" name="playgame" value="no">No</label>
         <br>
         <br>
-        <input type="submit">
+        <input class="submit-button" type="submit">
     </form>
 {% endblock %}
